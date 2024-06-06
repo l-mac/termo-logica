@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Causas del cambio climático</title>
+    <link rel="stylesheet" href="styles/causas.css">
+    <link rel="icon" href="imagenes/principal/LOGO.jpg">
+
+    <style type="text/css">
+		*{
+			margin: 0px; padding: 0px;
+		}
+		#visor{
+			position: relative; top:20px; left: 10px;
+			width:450px;height: 250px; overflow: hidden;border-radius:30px;
+		}
+		#fondouno{
+			position: absolute; top:0px; left: 0px;
+		}
+		#fondodos{
+			position: absolute; top:0px; left: 450px;
+		}
+		#tractor{
+			position: absolute; top:170px; left: 130px;
+		}
+		#humo{
+			position: absolute; top:99px; left: 125px;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			fondo1=document.getElementById("fondouno");
+			fondo2=document.getElementById("fondodos");
+			//desplaza la imágen-50 milissegundos
+			pararmover=setInterval(mover, 50);
+			setInterval(repetir, 2250);
+			//cuando alcance la primera, regresa a la posición original
+		}
+		desplazar=0;
+		function mover(){
+			desplazar-=10;
+			desplazar2=desplazar+450;
+			posicion=desplazar+"px";
+			posicion2=desplazar2+"px";
+			fondo1.style.left=posicion;
+			fondo2.style.left=posicion2;
+		}
+		function repetir(){
+			fondo1.style.left="0px";
+			fondo2.style.left="450px";
+			desplazar=0;
+		}
+	</script>
+</head>
+<body>
+<!--contenido-->
+<section class="container">
+    <div class="video-container">
+        <video src="videos/Deforestación.mp4" autoplay muted loop></video>
+    </div>
+    <div class="contenido">
+        <!--header-->
+<header>
+    <div class="navbar">
+        <table>
+            <tr>
+                <th><a href="principal.html"><img src="imagenes/1716008224185.png"
+                            style="width: 70px;height: 70px;border-radius: 50%; margin-top: -10px;"></a></th>
+                <th>
+                    <div class="logo"><a href="principal.html">CAMBIO CLIMÁTICO</a></div>
+                </th>
+            </tr>
+        </table>
+        <ul class="links">
+            <nav class="navegador">
+                <a href="principal.html">PRINCIPAL</a>
+                <a href="consecuencias.html">CONSECUENCIAS</a>
+                <a href="soluciones.html">SOLUCIONES</a>
+                <a href="extras.html">EXTRAS</a>
+                <a href="nosotros.html">NOSOTROS</a>
+                <span></span>
+            </nav>
+        </ul>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <!--menu desplegable para responsive header-->
+    <div class="dropdown_menu">
+            <li><a href="principal.html">PRINCIPAL</a></li>
+            <li><a href="consecuencias.html">CONSECUENCIAS</a></li>
+            <li><a href="soluciones.html">SOLUCIONES</a></li>
+            <li><a href="extras.html">EXTRAS</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+    </div>
+</header>
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn');
+    const toggleBtnIcon = document.querySelector('.toggle_btn');
+    const dropDownMenu = document.querySelector('.dropdown_menu');
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+    }
+</script>
+<div class="campo"><section class="cont-1">
+    <h2 class="neon-text"> 
+        causas
+    </h2>
+</section></div><hr>
+<h3 class="categ">Naturales</h3>
+<div class="elemento2">
+    <div class="parrafo">
+        <h1>Cambios en la órbita</h1>
+        <p><strong>El giro, la inclinación y la órbita</strong><br>El giro, la inclinación y  
+        la órbita de la Tierra afectan la cantidad de energía solar recibida por cualquier región particular del globo, dependiendo de la  
+        latitud, la hora del día y la época del año. Pequeños cambios en el ángulo de inclinación de la Tierra y la forma de su órbita alrededor  
+        del Sol causan cambios en el clima en un lapso de 10000 a 100000 años, y no están causando el cambio climático en la actualidad</p>
+    </div>
+    <img src="imagenes/causas/causa1Orbitas.jfif">
+</div>
+            <div class="elemento2">
+                <div class="parrafo">
+                    <h1>Placas tectónicas</h1>
+                    <p><strong>La tectónica</strong><br>Con el tiempo, los científicos también se han dado cuenta de que la tectónica es la  
+                    fuerza impulsora detrás de la mayoría de los cambios climáticos que nuestro planeta ha sufrido a lo largo del tiempo  
+                    geológico. A un ritmo de milímetros por año, los continentes se desplazan, se rompen en pedazos más pequeños y chocan entre 
+                    sí. Esta danza abre y cierra vías marítimas y construye cadenas montañosas y, al hacerlo, cambia los vientos y las corrientes 
+                    océanicas en el mundo.<br>En un artículo que se publicará próximamente en la revista Tectonics, un grupo de investigadores  
+                    dirigido por el geógrafo y experto en modelización climática Gilles Ramstein, del Laboratorio de Ciencias del Clima y del  
+                    Medio Ambiente de Francia, muestra la importancia de estos procesos a través de tres ejemplos dramáticos: la congelación  
+                    de todo el planeta, o bola de nieve de la Tierra; el cierre del Paratethys y el desarrollo del monzón del sudeste asiático;   
+                    y el levantamiento de las mesetas que rodean el Rift de África Oriental.</p>
+                </div>
+                <img src="imagenes/causas/causa2Placas.png" id="placa">
+            </div>
+            <div class="elemento2">
+                <div class="parrafo">
+                    <h1>Erupciones volcánicas</h1>
+                    <p><strong>Los volcanes y el clima</strong><br>Los científicos del clima mencionan erupciones volcánicas para ayudarnos a comprender y  
+                        explicar los periodos cortos de enfriamiento en la historia de la Tierra. Aproximadamentecada pocas décadas, una erupción volcánica,  
+                        como la del Monte Pinatubo o El Chichón, libera una cantidad sustancial de partículas y gases. Alguna de estas partículas y gases  
+                        bloquean temporalmente suficiente luz solar para inducir un breve periodo de enfriamiento global.  
+                        Si bien éstos efectos generalmente se disipan después dde 1 a 2 años, su impacto se siente en todo el mundo.</p>
+                </div>
+                <img src="imagenes/causas/causa3Volcanes.jpg" id="volcan">
+            </div>
+            <hr><h3 class="categ">Sociales</h3>
+            <div class="elemento2">
+                <div class="parrafo">
+                    <h1>La tala de los árboles</h1>
+                    <p><strong>A fin de crear granjas o pasto</strong><br>O por otros motivos, provoca emisiones dado que cuando se talan 
+                        sus árboles se libera el carbono que éstos han estado almacenando. Cada año se destruyen aproximadamente 12 millones 
+                        de hectáreas de bosques. Puesto que los bosques absorben el dióxido de carbono, su destrucción también limita la 
+                        capacidad de la naturalleza para mantener éstas emisiones fuera de la atmósfera.</p>
+                        
+                </div>
+                <img src="imagenes/causas/causa4Tala.jpg">
+            </div>
+            <div class="elemento2">
+                <div class="parrafo">
+                    <h1>La producción de alimentos</h1>
+                    <p><strong>La producción de alimentos</strong><br>Provoca emisiones de metano, dióxido de carbono y otros gases de efecto 
+                        invernadero, de diferentes maneras, en lo que se incluye la deforestación y la roturación de tierras para la 
+                        agricultura y el pastoreo, la alimentación del ganado bovino y ovino, la producción y uso de fertilizantes y el abono 
+                        utilizado para los cultivos, además del uso de la energía que hace funcionar el equipo de las granjas o barcos pesqueros, 
+                        siendo normalmente con combustibles fósiles. Todo esto hace que la producción de alimentos sea uno de los sectores que más 
+                        contribuyen al cambio climático</p>
+                </div>
+                <img src="imagenes/causas/causa5P_alim.jpg">
+            </div>
+            <div class="elemento2">
+                <div class="parrafo">
+                    <h1>Un consumo excesivo</h1>
+                    <p><strong>Su hogar</strong><br>El uso que hace de la energía, el modo de desplazarse, lo que come, lo que derrocha,  
+                        etc. Todo ello afecta a la emisión de gases de efecto invernadero. Y lo mismo ocurre con el consumo de bienes como  
+                        la ropa, los componentes electrónicos y los productos fabricados en plástico. Un gran porcentaje de las emisiones  
+                        de gases de efecto invernadero están ligadas a los hogares particulares</p>
+                </div>
+                <img src="imagenes/causas/causa6Hogar.avif">
+            </div>
+            <br><br>
+           <center>
+             <div id="visor">
+                <div id= "fondouno">
+                    <img src="imagenes/causas/img_causas/fondo.jpg" width="450" alt="fondo1">
+                </div>
+                <div id="fondodos">
+                    <img src="imagenes/causas/img_causas/fondo.jpg" width="450" alt="fondo2">
+                </div>
+                <div id="tractor">
+                    <img src="imagenes/causas/img_causas/Tractor.webp" width="110" alt="tractor">
+                </div>
+                <div id="humo">
+                    <img src="imagenes/causas/img_causas/humo.gif" alt="humo" width="100">
+                </div>
+            </div>
+        </center>
+        <h3 class="categ">- Bibliografía -</h3>
+        <div class="elemento2" id="biblio"> 
+            <div class="parrafo">
+              <center>
+                <h1>Bibliografía de la información usada en la página web</h1><br>
+                <p><strong>Causas</strong><br>
+                <p>Naciones Unidas. Causas y efectos del cambio climático. Consultado el 23 de mayo del 2024 de 
+                    <a href="https://www.un.org/es/climatechange/science/causes-effects-climate-change"><strong>
+                        https://www.un.org/es/climatechange/science/causes-effects-climate-change</strong></a></p><br>
+                <p><strong>Imágenes y videos</strong><br>
+                    <p>Créditos a quien corresponda</p>
+            </center>
+            </div>
+        </div>
+        <!--pie de página responsive-->
+<footer class="footer-distributed">
+    <div class="footer-left">
+        <h3>CAMBIO <span>CLIMÁTICO</span></h3>
+        <p class="footer-links">
+            <a href="principal.html">Principal</a>
+            <a href="causas.html">Causas</a>
+            <a href="consecuencias.html">Consecuencias</a>
+            <a href="soluciones.html">Soluciones</a>
+            <a href="extras.html">Extras</a>
+        </p>
+        <p class="footer-company-name">Copyrigth @ 2024 <strong>cambio CLIMÁTICO </strong>Todos los derechos reservados</p>
+    </div>
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>CECyTE plantel 05 "Etla"</span> Oaxaca, México</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto: ALFREDO.RAMIREZ.GUTIERREZ.01@gmail.com" id="alfre"> ALFREDO.RAMIREZ.GUTIERREZ.01@gmail.com</a></p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto: leslie.martinez.cuevas@gmail.com"> leslie.martinez.cuevas@gmail.com</a></p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto: ana.licari.rios.hernandez@gmail.com"> ana.licari.rios.hernandez@gmail.com</a></p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto: daniel.jocsan.cruz.martinez@gmail.com"> daniel.jocsan.cruz.martinez@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>Acerca de nosotros</span><br>
+            La presente página web fue elaborada por los alumnos <strong style="color: aliceblue;">Alfredo Ramírez Gutiérrez, 
+                Leslie Martínez Cuevas, Daniel Jocsan Cruz Martínez, Ana Licari Ríos Hernández</strong> del CECYTE plantel 05 "Etla" 
+                con fines educativos, abordando la problemática actual del cambio climático que ultimamente se ha estado haciendo mas 
+                notorio en todo en mundo. Nuestra página web, tiene como objetivo informar y concientizar a la población sobre las acciones 
+                que influyen en el cambio climático y cómo corregirlas.</p>
+    </div>
+</footer>
+    </div> 
+</section>
+    </main>
+</body>
+</html>

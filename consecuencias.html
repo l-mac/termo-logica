@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Consecuencias del cambio climático</title>
+    <link rel="stylesheet" href="styles/consecuencias.css">
+    <link rel="icon" href="imagenes/principal/LOGO.jpg">
+    <style type="text/css">
+		*{
+			margin: 0px;padding: 0px;
+		}
+		h1{
+           font: bold 1.5em arial; text-align: center;
+           padding: 0.5em;
+		}
+		#visor{
+			position:relative; 
+            top: 100px;
+             left: 10px;
+			width: 450px; 
+            height: 300px;
+             overflow: hidden;
+            border-radius: 30px;
+            border: red solid 5px;
+		}
+		#fondouno{
+			position: absolute; top: 0px; left: 0px;
+		}
+		#fondodos{
+			position: absolute; top: 0px; left: 450px;
+		}
+		#perro{
+			position: absolute; top: 230px; left: 120px;
+		}
+		#ave{
+			position: absolute; top: 160px; left: 200px;
+		}
+		#ardilla{
+			position: absolute; top: 231px; left: 240px;
+		}
+	</style>
+    <script type="text/javascript">
+		window.onload=function(){
+			fondo1=document.getElementById("fondouno");
+			fondo2=document.getElementById("fondodos");
+		    pararmover=setInterval(mover,70);
+		    setInterval(repetir,2250);
+
+		}
+		desplazar=0;
+		function mover(){
+			desplazar-=10;
+			desplazar2=10+desplazar+450;
+			posicion=desplazar+"px";
+			posicion2=desplazar2+"px";
+			fondo1.style.left=posicion;
+			fondo2.style.left=posicion2;
+		}
+		function repetir(){
+			fondo1.style.left="0px";
+			fondo2.style.left="450px";
+			desplazar=0;
+		}
+	</script>
+    </head>
+<body>
+    <section class="container">
+        <div class="video-container">
+            <video src="videos/incendio.mp4" autoplay muted loop></video>
+        </div>
+        <div class="contenido">
+            <!--header-->
+<header>
+    <div class="navbar">
+        <table>
+            <tr>
+                <th><a href="principal.html"><img src="imagenes/1716008224185.png" style="width: 60px;height: 60px;border-radius: 50%;"></a></th>
+                <th><div class="logo"><a href="principal.html">CAMBIO CLIMÁTICO</a></div></th>
+            </tr>
+        </table>
+        
+        <ul class="links">
+            <nav class="navegador">
+                <a href="principal.html">PRINCIPAL</a>
+                <a href="causas.html">CAUSAS</a>
+                <a href="soluciones.html">SOLUCIONES</a>
+                <a href="extras.html">EXTRAS</a>
+                <a href="nosotros.html">NOSOTROS</a>
+                <span></span>
+            </nav>
+        </ul>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <!--menu desplegable para responsive header-->
+    <div class="dropdown_menu">
+     
+            <li><a href="principal.html">PRINCIPAL</a></li>
+            <li><a href="causas.html">CAUSAS</a></li>
+            <li><a href="soluciones.html">SOLUCIONES</a></li>
+            <li><a href="extras.html">EXTRAS</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+    </div>
+</header>
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn');
+    const toggleBtnIcon = document.querySelector('.toggle_btn');
+    const dropDownMenu = document.querySelector('.dropdown_menu');
+
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+       
+    }
+</script>
+
+    <main>
+        <div class="contenedor">
+           <!-- <div class="elemento1">
+                <center><h2 style="font-size: 80px;">CONSECUENCIAS</h2></center>
+            </div>-->
+ 
+            <div class="campo"><section class="cont-1">
+                <h2 class="neon-text"> 
+                    consecuencias
+                </h2>
+            
+            </section></div><hr><br>
+<h3 class="categ">Naturales</h3>
+           <div class="elemento2">
+                <div class="parrafo">
+                    <h1>Tormentas más potentes</h1>
+                    <p><strong>  </strong><br>Las tormentas destructivas se han vuelto más intensas y más frecuentes en muchas regiones. A medida que se elevan las temperaturas se evapora mayor humedad, lo que causa inundaciones y precipitaciones extremas, provocando más tormentas destructivas.</p>
+
+                </div>
+                <img src="imagenes/8.jpg">
+            </div>
+            <div class="elemento2">
+                <div class="parrafo">
+                    <h1>Aumento de las sequías</h1>
+                    <p>El cambio climático está modificando la disponibilidad de agua, al hacerla más escasa en más regiones. El calentamiento global genera escasez de agua en regiones ya de por sí secas, y está incrementando el riesgo de sequías agrícolas que afectan a cultivos y sequías ecológicas que aumentan la vulnerabilidad de los ecosistemas.</p>
+                </div>
+                <img src="imagenes/7.jpg">
+            </div>
+            <div class="elemento2">
+                <div class="parrafo">
+                    <h1>Elevación de las temperaturas</h1>
+                    <p>A medida que se eleva la concentración de gases de efecto invernadero, también lo hace la temperatura de la superficie del planeta. En la última década, del 2011 al 2020, se ha registrado el mayor calentamiento hasta la fecha.</p>
+
+                </div>
+                <img src="imagenes/9.jpg" id="temp">
+            </div>
+            <hr><h3 class="categ">Sociales</h3>
+            <!--CONSECUENCIAS-->
+            <div class="elemento2">
+                <div class="parrafo">
+                    <h1>Más riesgos para la salud</h1>
+                    <p>El cambio climático supone la mayor amenaza única para la salud de la humanidad. El cambio climático ya daña de hecho la salud, a través de la contaminación</p>
+                
+                </div>
+                <img src="imagenes/11.jpg">
+            </div>
+            <div class="elemento2">
+                <div class="parrafo">
+                    <h1>Escasez de alimentos</h1>
+                    <p>Los cambios en el clima y el aumento de condiciones meteorológicas extremas son algunos de los motivos que provocan un aumento global en la desnutrición en las poblaciones más pobres.</p>
+
+                </div>
+                <img src="imagenes/10.jpg">
+            </div>
+            <div class="elemento2">
+                <div class="parrafo">
+                    <h1>Pobreza y desplazamiento</h1>
+                    <p><strong>  </strong><br>El cambio climático aumenta los factores que llevan y mantienen a la gente en la pobreza. Las inundaciones pueden arrasar barrios marginales, destruyendo hogares y comunidades. El calor dificulta la ejecución de trabajos en el exterior. La escasez de agua puede afectar a los cultivos..</p>
+
+                </div>
+                <img src="imagenes/12.jpg">
+            </div>
+        </div>
+
+    </div>
+
+            <br><br>
+<!--animacion-->
+<center>
+<div id="visor">
+	<div id="fondouno">
+		<img src="imagenes/img/quemado.jpg">
+	</div>
+
+	<div id="fondodos">
+		<img src="imagenes/img/quemado.jpg">
+	</div>
+
+	<div id="perro">
+		<img src="imagenes/img/perro.gif" width="70px" height="80px">
+	</div>
+
+	<div id="ave"> 
+		<img src="imagenes/img/ave.gif" width="40px" height="40px">
+	</div>
+    
+	<div id="ardilla">
+		<img src="imagenes/img/ardilla.gif" width="100px" height="100px">
+	</div>
+</div>
+</center><br><br><br><br><br><br>
+<h3 class="categ">- Bibliografía -</h3>
+        <div class="elemento2" id="biblio"> 
+            <div class="parrafo">
+              <center>
+                <h1>Bibliografía de la información usada en la página web</h1><br>
+                
+                    <strong>Consecuencias</strong><br>
+                    <p>Naciones Unidas. Causas y efectos del cambio climático. Consultado el 23 de mayo del 2024 de <a href="https://www.un.org/es/climatechange/science/causes-effects-climate-change"><strong>https://www.un.org/es/climatechange/science/causes-effects-climate-change</strong></a></p><br>
+                    <strong>Imágenes y videos</strong><br>
+                    <p>Créditos a quien corresponda</p>
+
+            </center>
+            </div>
+            
+        </div>
+
+
+
+
+
+   <!--pie de página responsive-->
+   <br><br><br><br><br><br>
+   <footer class="footer-distributed">
+    <div class="footer-left">
+        <h3>CAMBIO <span>CLIMÁTICO</span></h3>
+
+        <p class="footer-links">
+            <a href="principal.html">Principal</a>
+            <a href="causas.html">Causas</a>
+            <a href="consecuencias.html">Consecuencias</a>
+            <a href="soluciones.html">Soluciones</a>
+            <a href="extras.html">Extras</a>
+
+
+        </p>
+        <p class="footer-company-name">Copyrigth @ 2024 <strong>cambio CLIMÁTICO </strong>Todos los derechos reservados</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>CECyTE plantel 05 "Etla"</span> Oaxaca, México</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto: ALFREDO.RAMIREZ.GUTIERREZ.01@gmail.com" id="alfre"> ALFREDO.RAMIREZ.GUTIERREZ.01@gmail.com</a></p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto: leslie.martinez.cuevas@gmail.com"> leslie.martinez.cuevas@gmail.com</a></p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto: ana.licari.rios.hernandez@gmail.com"> ana.licari.rios.hernandez@gmail.com</a></p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto: daniel.jocsan.cruz.martinez@gmail.com"> daniel.jocsan.cruz.martinez@gmail.com</a></p>
+        </div>
+    </div>
+
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>Acerca de nosotros</span><br>
+            La presente página web fue elaborada por los alumnos <strong style="color: aliceblue;">Alfredo Ramírez Gutiérrez, Leslie Martínez Cuevas, Daniel Jocsan Cruz Martínez, Ana Licari Ríos Hernández</strong> del CECYTE plantel 05 "Etla" con fines educativos, abordando la problemática actual del cambio climático que ultimamente se ha estado haciendo mas notorio en todo en mundo. Nuestra página web, tiene como objetivo informar y concientizar a la población sobre las acciones que influyen en el cambio climático y cómo corregirlas.
+        </p>
+        
+    </div>
+</footer>
+        </div>
+    </section>
+
+</body>
+</html>

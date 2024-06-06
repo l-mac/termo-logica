@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Soluciones del cambio climático</title>
+    <link rel="stylesheet" href="styles/soluciones.css">
+    <link rel="icon" href="imagenes/principal/LOGO.jpg">
+    <style type="text/css">
+        #visor {
+            margin: auto;
+            position: relative;
+            top: 100px;
+            left: 10px;
+            width: 450px;
+            height: 274px;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+
+        #fondouno {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        #fondodos {
+            position: absolute;
+            top: 0px;
+            left: 450px;
+        }
+
+        #bici {
+            position: absolute;
+            top: 150px;
+            left: 150px;
+        }
+
+        #patin {
+            position: absolute;
+            top: 105px;
+            left: 250px;
+        }
+
+        #correr {
+            position: absolute;
+            top: 145px;
+            left: 30px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            fondo1 = document.getElementById("fondouno");
+            fondo2 = document.getElementById("fondodos");
+            //desplaza la imágen-50 milissegundos
+            pararmover = setInterval(mover, 50);
+            setInterval(repetir, 2250);
+            //cuando alcance la primera, regresa a la posición original
+        }
+        desplazar = 0;
+        function mover() {
+            desplazar -= 10;
+            desplazar2 = desplazar + 450;
+            posicion = desplazar + "px";
+            posicion2 = desplazar2 + "px";
+            fondo1.style.left = posicion;
+            fondo2.style.left = posicion2;
+        }
+
+        function repetir() {
+            fondo1.style.left = "0px";
+            fondo2.style.left = "450px";
+            desplazar = 0;
+
+        }
+
+    </script>
+</head>
+
+<body>
+   
+
+    <section class="container">
+        <div class="video-container">
+            <video src="videos/backPaneles.mp4" autoplay muted Loop></video>
+        </div>
+
+        <div class="contenido">
+            <!--header-->
+            <header>
+                <div class="navbar">
+                    <table>
+                        <tr>
+                            <th><a href="principal.html"><img src="imagenes/1716008224185.png"
+                                        style="width: 70px;height: 70px;border-radius: 50%; margin-top: -10px;"></a>
+                            </th>
+                            <th>
+                                <div class="logo"><a href="principal.html">CAMBIO CLIMÁTICO</a></div>
+                            </th>
+                        </tr>
+                    </table>
+
+                    <ul class="links">
+                        <nav class="navegador">
+                            <a href="principal.html">PRINCIPAL</a>
+                            <a href="causas.html">CAUSAS</a>
+                            <a href="consecuencias.html">CONSECUENCIAS</a>
+
+                            <a href="extras.html">EXTRAS</a>
+                            <a href="nosotros.html">NOSOTROS</a>
+                            <span></span>
+                        </nav>
+                    </ul>
+                    <div class="toggle_btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <!--menu desplegable para responsive header-->
+                <div class="dropdown_menu">
+
+                    <li><a href="principal.html">PRINCIPAL</a></li>
+                    <li><a href="causas.html">CAUSAS</a></li>
+                    <li><a href="consecuencias.html">CONSECUENCIAS</a></li>
+                    <li><a href="extras.html">EXTRAS</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+
+                </div>
+            </header>
+            <script>
+                const toggleBtn = document.querySelector('.toggle_btn');
+                const toggleBtnIcon = document.querySelector('.toggle_btn');
+                const dropDownMenu = document.querySelector('.dropdown_menu');
+
+                toggleBtn.onclick = function () {
+                    dropDownMenu.classList.toggle('open')
+
+                }
+            </script>
+
+            <div class="campo">
+                <section class="cont-1">
+                    <h2 class="neon-text">
+                        soluciones
+                    </h2>
+
+                </section>
+            </div>
+            <hr><br><br>
+            <table class="table1">
+                <tr>
+                    <td>
+                        <picture>
+
+
+                            <img src="imagenes/soluciones/sl1.jpg" class="imm">
+                        </picture>
+                        <details>
+                            <summary>Ahorre energía en Casa ↓</summary>&ensp;
+                            <p class="parr">Gran parte de nuestra electricidad y calefacción funciona con carbón,
+                                petróleo y gas. Utiliza
+                                menos energía reduciendo la calefacción y el aire acondicionado, cambiando a
+                                bombillas LED y electrodomésticos de bajo consumo, lavando la ropa con agua fría o
+                                tendiendo la
+                                ropa mojada en lugar de utilizar la secadora.</p>
+                        </details>
+                    </td>
+                    <td>
+                        <picture>
+                            <img src="imagenes/soluciones/sl3.jpg" class="imm">
+                        </picture>
+                        <details>
+                            &ensp;<summary>Desplácese caminando, en bicicleta o en transporte público ↓</summary>
+                            <p>Las carreteras del mundo están saturadas de vehículos, la mayoría de los cuales usan
+                                diésel o
+                                gasolina. Caminar o ir en bicicleta en lugar de
+                                conducir reduce las emisiones de gases de efecto invernadero, y supone un beneficio para
+                                la
+                                salud y la forma física. Para distancias más largas,
+                                considera viajar en tren o autobús. Y comparte el coche siempre que sea posible.</p>
+                        </details>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <picture>
+                            <img src="imagenes/soluciones/sl2.jpg" class="imm">
+                        </picture>
+                        <details>
+                            &ensp;&ensp;<summary>Coma más verduras ↓</summary>
+                            <p>Comer más verduras, frutas, cereales integrales, legumbres, frutos secos y semillas, y
+                                menos
+                                carne y productos lácteos, puede reducir considerablemente tu
+                                impacto medioambiental. La producción de alimentos de origen vegetal suele generar menos
+                                emisiones de gases de efecto invernadero y requiere menos energía, 
+                                tierra y agua.</p>
+                        </details>
+                    </td>
+                    <td>
+                        <picture>
+                            <img src="imagenes/soluciones/sl4.jpg" class="imm">
+                        </picture>
+                        <details>
+                            <summary>Considere su desplazamiento ↓</summary><br>
+                            &ensp;&ensp;<p>Los aviones usan grandes cantidades de combustibles fósiles, produciendo
+                                importantes emisiones de
+                                gases de efecto invernadero. Esto hace que tomar menos vuelos
+                                sea una de las formas más rápidas de reducir tu impacto medioambiental. Cuando puedas,
+                                reúnete
+                                virtualmente, toma un tren o o evita un viaje de larga distancia.</p>
+                        </details>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <picture>
+                            <img src="imagenes/soluciones/sl5.jpg" class="imm">
+                        </picture>
+                        <details>
+                            <summary>Tire menos comida ↓</summary><br>
+                            &ensp;&ensp; <p>Cuando tiras comida, también desperdicias los recursos y la energía que se
+                                utilizaron para
+                                cultivarla, producirla, envasarla y transportarla. Y cuando los
+                                alimentos se pudren en un vertedero, producen metano, un potente gas de efecto
+                                invernadero. Así
+                                pues, utiliza lo que compres y convierte en abono los restos.</p>
+                        </details>
+                    </td>
+                    <td>
+                        <picture>
+                            <img src="imagenes/soluciones/sl6.jpg" class="imm">
+                        </picture>
+                        <details>
+                            <summary>Reduzca, reutilice, repare y recicle ↓</summary><br>
+                            &ensp;&ensp; <p>Los aparatos electrónicos, la ropa y otros artículos que compramos generan
+                                emisiones de carbono
+                                en cada eslabón de la cadena de producción, desde la extracción de las materias primas
+                                hasta la
+                                fabricación y el transporte de
+                                los productos al mercado. Para proteger nuestro clima, compra menos cosas, compra de
+                                segunda
+                                mano, repara lo que puedas y recicla.</p>
+                        </details>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <picture>
+                            <img src="imagenes/soluciones/sl7.jfif" class="imm">
+                        </picture>
+                        <details>
+                            <summary>Cambie el tipo de energía de su casa ↓</summary><br>
+                            &ensp; &ensp;<p>Pregunta a tu compañía eléctrica si la energía de tu hogar procede del
+                                petróleo, carbón o gas. Si
+                                es posible, comprueba si puedes cambiar a fuentes renovables,
+                                como la eólica o la solar. O bien instala paneles solares en tu tejado para generar la
+                                energía de tu vivienda.</p>
+                        </details>
+                    </td>
+                    <td>
+                        <picture>
+                            <img src="imagenes/soluciones/sl8.jfif" class="imm">
+                        </picture>
+                        <details>
+                            <summary>Cambie a un vehículo eléctrico ↓</summary><br>
+                            &ensp;&ensp; <p>Si piensas comprar un coche, considera la posibilidad de adquirir un modelo
+                                eléctrico, ya que
+                                cada vez se comercializan más modelos a menor precio. Aunque funcionen
+                                con electricidad producida a partir de combustibles fósiles, los coches eléctricos
+                                contribuyen a
+                                reducir la contaminación atmosférica y causan menos emisiones de
+                                gases de efecto invernadero que los vehículos de gas o diésel.</p>
+                        </details>
+                    </td>
+                </tr>
+
+            </table>
+
+
+            <div id="visor">
+
+                <div id="fondouno">
+                    <img src="imagenes/ani2/road-empty-city-street-alley-600nw-1633259266.webp" alt="fondo1">
+                </div>
+
+                <div id="fondodos">
+                    <img src="imagenes/ani2/road-empty-city-street-alley-600nw-1633259266.webp" alt="fondo2">
+                </div>
+
+
+
+                <div id="bici">
+                    <img src="imagenes/ani2/ciclismo-11-unscreen.gif" width="130" height="130" alt="bici">
+                </div>
+
+                <div id="patin">
+                    <img src="imagenes/ani2/giphy-unscreen.gif" width="180" height="180" alt="patin">
+                </div>
+
+                <div id="correr">
+                    <img src="imagenes/ani2/c2247d10cddc455ea6d676a9969fee49_w200.gif" width="100" height="100"
+                        alt="correr">
+                </div>
+
+
+            </div>
+
+
+            <br><br><br><br><br>
+            <h3 class="categ">- Bibliografía -</h3>
+            <div class="elemento2" id="biblio">
+                <div class="parrafo">
+                    <center>
+                        <h1>Bibliografía de la información usada en la página web</h1><br>
+                       
+                        <strong>Soluciones</strong><br>
+                        <p>Naciones Unidas. Acciones por un planeta saludable. Consultado el 23 de mayo del 2024 de <a
+                                href="https://www.un.org/es/actnow/ten-actions#unplug"><strong>//www.un.org/es/actnow/ten-actions#unplug</strong></a>
+                        </p><br>
+
+                        <strong>Imágenes y video</strong>
+                        <p>Créditos a quien corresponda</p>
+                    </center>
+                </div>
+ 
+            </div>
+            <!--pie de página responsive-->
+            <footer class="footer-distributed">
+                <div class="footer-left">
+                    <h3>CAMBIO <span>CLIMÁTICO</span></h3>
+
+                    <p class="footer-links">
+                        <a href="principal.html">Principal</a>
+                        <a href="causas.html">Causas</a>
+                        <a href="consecuencias.html">Consecuencias</a>
+                        <a href="soluciones.html">Soluciones</a>
+                        <a href="extras.html">Extras</a>
+
+
+                    </p>
+                    <p class="footer-company-name">Copyrigth @ 2024 <strong>cambio CLIMÁTICO </strong>Todos los derechos
+                        reservados</p>
+                </div>
+
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>CECyTE plantel 05 "Etla"</span> Oaxaca, México</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto: ALFREDO.RAMIREZ.GUTIERREZ.01@gmail.com" id="alfre">
+                                ALFREDO.RAMIREZ.GUTIERREZ.01@gmail.com</a>
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto: leslie.martinez.cuevas@gmail.com"> leslie.martinez.cuevas@gmail.com</a></p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto: ana.licari.rios.hernandez@gmail.com">
+                                ana.licari.rios.hernandez@gmail.com</a></p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto: daniel.jocsan.cruz.martinez@gmail.com">
+                                daniel.jocsan.cruz.martinez@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>Acerca de nosotros</span><br>
+                        La presente página web fue elaborada por los alumnos <strong style="color: aliceblue;">Alfredo
+                            Ramírez
+                            Gutiérrez, Leslie Martínez Cuevas, Daniel Jocsan Cruz Martínez, Ana Licari Ríos
+                            Hernández</strong>
+                        del CECYTE plantel 05 "Etla" con fines educativos, abordando la problemática actual del cambio
+                        climático
+                        que ultimamente se ha estado haciendo mas notorio en todo en mundo. Nuestra página web, tiene
+                        como
+                        objetivo informar y concientizar a la población sobre las acciones que influyen en el cambio
+                        climático y
+                        cómo corregirlas.
+                    </p>
+
+                </div>
+            </footer>
+        </div>
+    </section>
+
+</body>
+
+</html>
